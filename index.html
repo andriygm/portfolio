@@ -17,17 +17,17 @@
 
 <body>
     <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white px-4 py-4">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand mb-0 h1" href="#">
             <h1 class="d-inline-block align-middle">🚀</h1>
             Andriy Massimilla
         </a>
 
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar"
+            aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse" id="navbar">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
                     <a class="nav-link" href="#about">About</a>
@@ -43,58 +43,55 @@
     </nav>
 
     <main class="mx-5 my-5">
-        <div class="d-flex flex-row justify-content-center my-5">
-            <div class="p-2">
+        <div class="row center mx-auto py-5" style="max-width: 650px">
+            <div class="col-auto">
                 <h1 class="display-1">👋</h1>
             </div>
-            <div class="p-2">
+            <div class="col">
                 <h1>Hi, I'm Andriy.</h1>
-                <p>I'm a Senior at the University of Michigan studying Computer Science.</p>
+                <p>I'm a software engineer who loves making scalable, readable, and performant applications and making great user experiences.</p>
             </div>
         </div>
 
         <div id="about" class="my-5">
-            <h1 class="display-1">About</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum quisquam autem voluptatem ipsum aperiam
-                veniam suscipit distinctio in, deserunt magnam maxime aspernatur quaerat necessitatibus a dolor tempora.
-                Enim, architecto nisi.</p>
-            
-            <div class="py-5"></div>
+            <h1>About</h1>
+            <p>I'm currently a senior at the University of Michigan studying Computer Science. I've taken classes in game design, computer vision, sofware engineering, philosophy, and others. In my free time I write code, implement fun & interesting ideas, bike, ski, play games with friends, and cook good food.</p>
         </div>
 
         <div id="projects" class="my-5">
-            <h1 class="display-1">Projects</h1>
+            <h1>Projects</h1>
 
-            <section class="my-5">
-                <h2>Legend of Zelda Remake</h2>
-                <p>A recreation of the original Legend of Zelda videogame for the NES.</p>
-                <p>Co-developed with <a href="http://danielheidorn.com/" target="_blank">Daniel Heidorn</a> during EECS 494.</p>
+            <section class="row mb-5">
+                <!-- <img class="col-2-auto img-fluid" style="border-radius: 2em;" src="images/loz-remake/dungeon.png"> -->
 
-                <a class="btn btn-primary disabled" href="games/loz-remake-web/" role="button" target="_blank">
-                    <i class="bi bi-play"></i>
-                     Play game 
-                </a>
-                <a class="btn btn-primary" href="downloads/loz-remake-win.zip" role="button" download>
-                    <i class="bi bi-windows"></i> Download game
-                </a>
-                <a class="btn btn-primary" href="downloads/loz-remake-mac.zip" role="button" download>
-                    <i class="bi bi-apple"></i> Download game
-                </a>
+                <aside class="col">
+                    <h3>Legend of Zelda Remake</h3>
+
+                    <p>A recreation of the original Legend of Zelda videogame for the NES.</p>
+                    <p>Co-developed with <a href="http://danielheidorn.com/" target="_blank">Daniel Heidorn</a> during EECS 494.</p>
+
+                    <a class="btn btn-primary disabled" href="games/loz-remake-web/" role="button" target="_blank">
+                        <i class="bi bi-play"></i>
+                        Play game 
+                    </a>
+                    <a class="btn btn-primary my-1" href="downloads/loz-remake-win.zip" role="button" download>
+                        <i class="bi bi-windows"></i> Download game
+                    </a>
+                    <a class="btn btn-primary" href="downloads/loz-remake-mac.zip" role="button" download>
+                        <i class="bi bi-apple"></i> Download game
+                    </a>
+                </aside>
             </section>
 
             <section class="my-5">
-                <h2>Brewing Simulator</h2>
+                <h3>Brewing Simulator</h3>
                 <p>More details coming soon 😉</p>
             </section>
-
-            <div class="py-5"></div>
         </div>
 
         <div id="contact" class="my-5">
-            <h1 class="display-1">Contact Me</h1>
+            <h1>Contact Me</h1>
             Contact me at <a href="mailto:andriym@umich.edu">andriym@umich.edu</a>.
-
-            <div class="py-5"></div>
         </div>
     </main>
 
