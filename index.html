@@ -18,7 +18,7 @@
 </head>
 
 <body>
-    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white px-4 py-4">
+    <nav class="navbar sticky-top navbar-expand-sm navbar-light bg-white px-4 py-4">
         <a class="navbar-brand mb-0 h1" href="#">
             <h1 class="d-inline-block align-middle">🚀</h1>
             Andriy Massimilla
@@ -38,7 +38,7 @@
                     <a class="nav-link" href="#projects">Projects</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contact Me</a>
+                    <a class="nav-link" href="#contact">Contact</a>
                 </li>
             </ul>
         </div>
@@ -63,11 +63,31 @@
         <div id="projects" class="my-5">
             <h1>Projects</h1>
 
+            <h3>Utilities</h3>
+            <div class="row">
+                <div class="col-sm-6 card m-2">
+                    <img class="card-img-top" src="images/vr-teleop/flow-diagram.png" alt="VR control flow diagram">
+                    <div class="card-body">
+                        <h5 class="card-title">VR Teleop Controller</h5>
+
+                        <p class="card-text">A ROS-based utility to enable the control & manipulation of two-armed 7-DOF robot using virtual reality devices.</p>
+                        <p class="card-text">Co-developed with Daniel Chen for the University of Michigan <a href="http://arm.eecs.umich.edu/" target="_blank">ARM Lab</a>.</p>
+
+                        <a class="btn btn-secondary d-block" href="https://github.com/UM-ARM-Lab/vr_teleop" role="button" target="_blank">
+                            <i class="bi bi-code"></i>
+                            View source
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <h3>Games</h3>
             <div class="row">
                 <div class="col-sm card m-2">
-                    <img class="card-img-top" src="images/loz-remake/dungeon.png" alt="Card image cap">
+                    <img class="card-img-top" src="images/loz-remake/dungeon.png" alt="Dungeon level">
                     <div class="card-body">
                         <h5 class="card-title">Legend of Zelda Remake</h5>
+
                         <p class="card-text">A recreation of the original Legend of Zelda videogame for the NES.</p>
                         <p class="card-text">Co-developed with <a href="http://danielheidorn.com/" target="_blank">Daniel Heidorn</a> during EECS 494.</p>
                         
@@ -85,9 +105,10 @@
                 </div>
                 
                 <div class="col-sm card m-2">
-                    <img class="card-img-top" src="images/brewis/teaser.png" alt="Card image cap">
+                    <img class="card-img-top" src="images/brewis/teaser.png" alt="Grassy field level">
                     <div class="card-body">
                         <h5 class="card-title">Brewing Simulator</h5>
+
                         <p class="card-text">More details coming soon 😉</p>
                     </div>
                 </div>
@@ -95,9 +116,16 @@
         </div>
 
         <div id="contact" class="my-5">
-            <h1>Contact Me</h1>
-            Contact me at <a href="mailto:andriym@umich.edu">andriym@umich.edu</a>.
+            <h1>Contact</h1>
+            <p>Whether you have a business inquiry or just want to chat, I'd love to hear from you!</p>
+
+            <a class="btn btn-primary d-block mx-auto my-5 w-sm-25" href="mailto:andriymassimilla@gmail.com">Send me an email</a>
         </div>
+
+        <footer class="text-center pt-5 mt-5">
+            <p>Made with ❤ by Andriy Massimilla</p>
+            <a class="bi bi-github text-decoration-none" href="https://github.com/andriyasdf/portfolio/" target="_blank"> View this site on GitHub</a>
+        </footer>
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
