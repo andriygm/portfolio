@@ -2,8 +2,8 @@
   "name": "portfolio",
   "version": "1.0.0",
   "scripts": {
-    "build": "npx webpack build",
-    "watch": "npx webpack build --watch"
+    "build": "npx webpack build --mode=production",
+    "watch": "npx webpack build --watch --mode=development"
   },
   "dependencies": {
     "bootstrap": "^5.1.3",

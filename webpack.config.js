@@ -1,7 +1,6 @@
 const path = require('path');
 
 module.exports = {
-    mode: 'development',
     entry: {
         main: ['./src/entry.js', './src/entry.scss']
     },
