@@ -19,19 +19,19 @@ module.exports = {
                 use: ['style-loader', 'css-loader', 'postcss-loader', 'sass-loader']
             },
             {
-                test: /\.m?js$/,
-                exclude: /node_modules/,
-                use: ['babel-loader']
+                test: /\.html$/,
+                use: ['html-loader']
             },
             {
                 test: /\.pug$/,
-                use: ['pug-loader']
+                use: ['html-loader', 'pug-html-loader']
             },
         ]
     },
     plugins: [
         new HtmlWebpackPlugin({
-            template: './src/html/index.ejs'
+            template: './src/html/index.ejs',
+            title: 'Home — Andriy Massimilla',
         })
     ]
 };
