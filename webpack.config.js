@@ -1,11 +1,11 @@
 const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
     entry: {
-        main: ['./src/entry.js', './src/entry.scss']
+        main: './src/entry.js'
     },
     output: {
-        path: path.resolve(__dirname, 'build'),
         filename: 'bundle.js',
     },
     module: {
@@ -16,35 +16,22 @@ module.exports = {
             },
             {
                 test: /\.(scss)$/,
-                use: [{
-                    loader: 'style-loader'
-                }, {
-                    loader: 'css-loader'
-                }, {
-                    loader: 'postcss-loader',
-                    options: {
-                        postcssOptions: {
-                            plugins: function () {
-                                return [
-                                    require('autoprefixer')
-                                ];
-                            }
-                        }
-                    }
-                }, {
-                    loader: 'sass-loader'
-                }]
+                use: ['style-loader', 'css-loader', 'postcss-loader', 'sass-loader']
             },
             {
                 test: /\.m?js$/,
                 exclude: /node_modules/,
-                use: {
-                    loader: "babel-loader",
-                    options: {
-                        presets: ['@babel/preset-env']
-                    }
-                }
-            }
+                use: ['babel-loader']
+            },
+            {
+                test: /\.pug$/,
+                use: ['pug-loader']
+            },
         ]
-    }
+    },
+    plugins: [
+        new HtmlWebpackPlugin({
+            template: './src/html/index.ejs'
+        })
+    ]
 };
