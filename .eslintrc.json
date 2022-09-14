@@ -11,8 +11,5 @@
             "jsx": true
         }
     },
-    "extends": "eslint:recommended",
-    "plugins": [
-        "react"
-    ]
+    "extends": "eslint:recommended"
 }
