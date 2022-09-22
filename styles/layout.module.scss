@@ -1,0 +1,26 @@
+@import "variables";
+
+.main {
+    padding: 0 2em;
+}
+
+.hero {
+    font-size: 130%;
+    text-align: center;
+    // padding: 0 20%;
+
+    h1 {
+        font-size: 200%;
+    }
+
+    @include media(md) {
+        padding: 0 15%;
+        padding-top: 3em;
+        text-align: left;
+
+        h1 {
+            display: inline-block;
+            padding-right: 20px;
+        }
+    }
+}

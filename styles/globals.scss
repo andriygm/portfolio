@@ -1,0 +1,41 @@
+@import "variables";
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Source Sans Pro, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-size: 18px;
+}
+
+a {
+  color: $secondary-color;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+  filter: drop-shadow(0 0 0.02rem $primary-color);
+
+  &:hover {
+    color: $primary-color;
+    
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+// @media (prefers-color-scheme: dark) {
+//   html {
+//     color-scheme: dark;
+//   }
+//   body {
+//     color: white;
+//     background: black;
+//   }
+// }
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url('/fonts/SourceSansPro-Regular.ttf') format('truetype');
+}

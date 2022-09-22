@@ -1,0 +1,30 @@
+@import "variables";
+
+.navigation {
+    padding: 2em 1em;
+    text-align: center;
+    font-size: 125%;
+
+    .logo {
+        display: block;
+        padding: 0.5em;
+        font-size: 250%;
+    }
+
+    a {
+        padding: 1em;
+        font-weight: bold;
+        text-transform: lowercase;
+        vertical-align: middle;
+    }
+
+    @include media(md) {
+        .logo {
+            display: inline-block;
+        }
+    }
+
+    @include media(lg) {
+        text-align: left;
+    }
+}
