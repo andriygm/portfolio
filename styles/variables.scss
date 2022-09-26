@@ -21,3 +21,9 @@ $media: (
         }
     }
 }
+
+// Global styles
+@mixin max-width {
+    max-width: map-get($media, "2xl");
+    margin: 0 auto;
+}

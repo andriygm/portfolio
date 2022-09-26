@@ -4,6 +4,7 @@
     padding: 2em 1em;
     text-align: center;
     font-size: 125%;
+    @include max-width;
 
     .logo {
         display: block;

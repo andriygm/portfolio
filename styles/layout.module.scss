@@ -2,20 +2,25 @@
 
 .main {
     padding: 0 2em;
+    @include max-width;
+
+    @include media(md) {
+        padding: 0 4em;
+    }
 }
 
 .hero {
     font-size: 130%;
     text-align: center;
-    // padding: 0 20%;
+    padding: 0 10%;
 
     h1 {
-        font-size: 200%;
+        font-size: 220%;
     }
 
     @include media(md) {
         padding: 0 15%;
-        padding-top: 3em;
+        padding-top: 2em;
         text-align: left;
 
         h1 {
