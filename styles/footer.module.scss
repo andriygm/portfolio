@@ -1,6 +1,35 @@
 @import "variables";
 
 .footer {
-    padding: 5em 1em;
+    margin-top: 200px;
+    padding: 2em 3em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
+    color: white;
+    background-color: #111;
+
+    @include media(md) {
+        text-align: left;
+        flex-direction: row;
+    }
+}
+
+.about {
+    flex: 1;
+}
+
+.social {
+    flex: 1;
+    text-align: right;
+
+    .icon {
+        margin: 0.5em;
+        transition: transform 0.2s ease;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
 }

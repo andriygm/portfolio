@@ -12,12 +12,11 @@ body {
 a {
   color: $secondary-color;
   text-decoration: none;
-  transition: color 0.2s ease-in-out;
+  transition: color 0.2s ease;
   filter: drop-shadow(0 0 0.02rem $primary-color);
 
   &:hover {
     color: $primary-color;
-    
   }
 }
 
