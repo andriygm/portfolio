@@ -12,20 +12,24 @@
 .hero {
     font-size: 130%;
     text-align: center;
-    padding: 0 10%;
+    padding: 0 8%;
 
     h1 {
         font-size: 220%;
     }
 
     @include media(md) {
-        padding: 0 15%;
+        padding: 0 10%;
         padding-top: 2em;
         text-align: left;
 
         h1 {
             display: inline-block;
-            padding-right: 20px;
+            padding-right: 18px;
         }
+    }
+
+    @include media(lg) {
+        padding: 0 15%;
     }
 }
