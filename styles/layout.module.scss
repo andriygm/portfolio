@@ -7,12 +7,17 @@
     @include media(md) {
         padding: 0 4em;
     }
+    
+    > h1:first-child {
+        font-size: 3em;
+    }
 }
 
 .hero {
     font-size: 130%;
     text-align: center;
     padding: 0 8%;
+    margin-bottom: 4em;
 
     h1 {
         font-size: 220%;

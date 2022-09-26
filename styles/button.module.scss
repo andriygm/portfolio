@@ -1,0 +1,31 @@
+@import "variables";
+
+.button {
+    display: inline-block;
+    margin-right: 0.5em;
+    margin-bottom: 0.5em;
+    padding: 1em 1.5em;
+    
+    color: $background-color;
+    background-color: $primary-color;
+    border-radius: 1em;
+    box-shadow: none;
+    text-align: center;
+    @include generic-transition;
+    transform: translateZ(0);
+
+    &:hover {
+        color: $background-color;
+        background-color: $secondary-color;
+        transform: scale(1.05);
+    }
+
+    .icon {
+        vertical-align: middle;
+        margin-right: 0.3em;
+    }
+
+    &.secondary {
+        background-color: gray;
+    }
+}

@@ -6,6 +6,13 @@
     font-size: 125%;
     @include max-width;
 
+    > svg {
+        position: absolute;
+        fill: #f4f2ff;
+        top: 0;
+        left: 0;
+    }
+
     .logo {
         display: block;
         padding: 0.5em;

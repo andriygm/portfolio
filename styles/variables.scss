@@ -2,6 +2,7 @@
 $primary-color: rgb(221, 67, 67);
 $secondary-color: rgb(132, 42, 42);
 $tertiary-color: rgb(67, 20, 20);
+$background-color: rgb(255, 255, 255);
 
 $media: (
     sm: 640px,
@@ -22,8 +23,13 @@ $media: (
     }
 }
 
-// Global styles
 @mixin max-width {
-    max-width: map-get($media, "2xl");
+    max-width: map-get($media, lg);
     margin: 0 auto;
+}
+
+@mixin generic-transition {
+    transition-property: color transform;
+    transition-duration: 0.2s;
+    transition-timing-function: ease;
 }

@@ -1,0 +1,35 @@
+@import "variables";
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+
+    >.card {
+        flex: 1;
+    }
+
+    @include media(sm) {
+        flex-direction: row;
+    }
+}
+
+.card {
+    display: inline-block;
+    width: 100%;
+
+    background-color: #fafafa;
+    outline: 3px solid #eee;
+    border-radius: 2em;
+
+    img {
+        width: 100%;
+        border-top-left-radius: 2em;
+        border-top-right-radius: 2em;
+    }
+
+    .content {
+        padding: 2em;
+        padding-top: 0;
+    }
+}
