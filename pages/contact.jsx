@@ -27,8 +27,8 @@ function Contact() {
 
             <h1>Contact</h1>
             <p>
-                Whether you have a business inquiry or just want to chat, I'd
-                love to hear from you!
+                Whether you have a business inquiry or just want to chat, I{"'"}
+                d love to hear from you!
             </p>
 
             <Button href="mailto:me@andriym.dev">Send me an email</Button>
