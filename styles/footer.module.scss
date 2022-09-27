@@ -29,10 +29,8 @@
 
     .icon {
         margin: 0.5em;
-        @include generic-transition;
 
-        &:hover {
-            transform: scale(1.1);
-        }
+        @include generic-transition;
+        @include hover-sizing;
     }
 }

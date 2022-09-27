@@ -1,4 +1,4 @@
-import { FaBookOpen, FaPlay, FaCode } from 'react-icons/fa';
+import { FaBookOpen, FaPlay, FaCode, FaWindows, FaApple } from 'react-icons/fa';
 
 import styles from '../styles/work.module.scss'
 import { Button } from '../components/button'
@@ -30,14 +30,14 @@ export function ML() {
 export function VR() {
     return <>
         <div className={styles.card}>
-            <img src="../images/vr-teleop/flow-diagram.png" alt="Inpainting results" />
+            <img src="../images/vr-teleop/flow-diagram.png" alt="VR" />
             <div className={styles.content}>
                 <h1>VR Teleop Controller</h1>
 
                 <p>A ROS-based utility to enable the control & manipulation of two-armed 7-DOF robot using
                     virtual reality devices.</p>
-                <p>Co-developed with Daniel Chen for the University of Michigan <a
-                    href="http://arm.eecs.umich.edu/" target="_blank">ARM Lab</a>.</p>
+                <p>Co-developed with <a href="https://www.linkedin.com/in/daniel-chen-a42199167/" target="_blank">Daniel Chen</a> for the University of Michigan <a
+                    href="http://arm.eecs.umich.edu/" target="_blank">ARM Lab</a>, with continued development from <a href="https://github.com/bsaund" target="_blank">Brad Saund</a>.</p>
 
                 <Button
                     href="https://www.youtube.com/watch?v=EahUsJKVfw8">
@@ -56,23 +56,53 @@ export function VR() {
 export function LOZ() {
     return <>
         <div className={styles.card}>
-            <img src="../images/vr-teleop/flow-diagram.png" alt="Inpainting results" />
+            <img src="../images/loz-remake/banner.jpg" alt="Legend of Zelda gameplay" />
             <div className={styles.content}>
-                <h1>VR Teleop Controller</h1>
+                <h1>Legend of Zelda Remake</h1>
 
-                <p>A ROS-based utility to enable the control & manipulation of two-armed 7-DOF robot using
-                    virtual reality devices.</p>
-                <p>Co-developed with Daniel Chen for the University of Michigan <a
-                    href="http://arm.eecs.umich.edu/" target="_blank">ARM Lab</a>.</p>
+                <p>A recreation of the original Legend of Zelda videogame for the NES.</p>
+                <p>Co-developed with <a href="http://danielheidorn.com/" target="_blank">Daniel Heidorn</a> during EECS 494.</p>
 
                 <Button
-                    href="https://www.youtube.com/watch?v=EahUsJKVfw8">
-                    <FaPlay className={styles.icon} /> Watch demo
+                    href="/content/webgl/loz-remake/">
+                    <FaPlay className={styles.icon} /> Play game
                 </Button>
                 <Button
-                    href="https://github.com/UM-ARM-Lab/vr_teleop"
-                    type="secondary">
-                    <FaCode className={styles.icon} /> View source
+                    href="/content/downloads/loz-remake-win.zip">
+                    <FaWindows className={styles.icon} /> Download for Windows
+                </Button>
+                <Button
+                    href="/content/downloads/loz-remake-mac.zip">
+                    <FaApple className={styles.icon} /> Download for Mac
+                </Button>
+            </div>
+        </div>
+    </>
+}
+
+export function BrewingGame() {
+    return <>
+        <div className={styles.card}>
+            <img src="../images/brewis/title-screen.png" />
+            <div className={styles.content}>
+                <h1>Brewis</h1>
+
+                <p><em>Brew and sell ales, upgrade your equipment, and sell more ales!</em></p>
+
+                <p>Developed a 3D top-down brewing-themed game in Unity and Blender with JIRA over the course of two weeks.</p>
+                <p>Developed during EECS 494.</p>
+
+                <Button
+                    href="/content/webgl/brewis/">
+                    <FaPlay className={styles.icon} /> Play game
+                </Button>
+                <Button
+                    href="/content/downloads/brewis-win.zip">
+                    <FaWindows className={styles.icon} /> Download for Windows
+                </Button>
+                <Button
+                    href="/content/downloads/brewis-mac.zip">
+                    <FaApple className={styles.icon} /> Download for Mac
                 </Button>
             </div>
         </div>
@@ -84,9 +114,9 @@ export function MeahCounseling() {
         <div className={styles.card}>
             <img src="../images/meahcounseling/preview.png" />
             <div className={styles.content}>
-                <h1>MeahCounseling</h1>
+                <h1>Meah Counseling</h1>
 
-                <p>Website for local licensed therapist using custom WordPress theme, enabling easy maintenance.</p>
+                <p>Website for local licensed therapist using WordPress with custom theme, enabling easy maintenance.</p>
                 <p>Tested accessibility of colors and page navigation and assessed usability across device sizes.</p>
 
                 <Button
@@ -97,51 +127,3 @@ export function MeahCounseling() {
         </div>
     </>
 }
-
-
-{/* <h3>Research</h3>
-
-            <h3>Games</h3>
-            <div class="row mb-5">
-                <div class="col-sm card m-2">
-                    <img class="card-img-top" src="../images/loz-remake/banner.jpg">
-                        <div class="card-body">
-                            <h5 class="card-title">Legend of Zelda Remake</h5>
-
-                            <p class="card-text">A recreation of the original Legend of Zelda videogame for the NES.</p>
-                            <p class="card-text">Co-developed with <a href="http://danielheidorn.com/" target="_blank">Daniel Heidorn</a> during EECS 494.</p>
-
-                            <a class="btn btn-primary d-block" href="/content/webgl/loz-remake/" role="button" target="_blank">
-                                <i class="bi bi-play"></i>
-                                Play game
-                            </a>
-                            <a class="btn btn-primary my-1 d-block" href="/content/downloads/loz-remake-win.zip" role="button" download>
-                                <i class="bi bi-windows" alt="Windows"></i> Download game
-                            </a>
-                            <a class="btn btn-primary d-block" href="/content/downloads/loz-remake-mac.zip" role="button" download>
-                                <i class="bi bi-apple" alt="Mac"></i> Download game
-                            </a>
-                        </div>
-                </div>
-
-                <div class="col-sm card m-2">
-                    <img class="card-img-top" src="../images/brewis/banner.png">
-                        <div class="card-body">
-                            <h5 class="card-title">Brewis</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">Tech demo build</h6>
-                            <p class="card-text">Brew and sell ales, upgrade your equipment, and sell more ales!</p>
-                            <p class="card-text">Developed during EECS 494.</p>
-
-                            <a class="btn btn-primary d-block" href="/content/webgl/brewis/" role="button" target="_blank">
-                                <i class="bi bi-play"></i>
-                                Play game
-                            </a>
-                            <a class="btn btn-primary my-1 d-block" href="/content/downloads/brewis-win.zip" role="button" download>
-                                <i class="bi bi-windows" alt="Windows"></i> Download game
-                            </a>
-                            <a class="btn btn-primary d-block" href="/content/downloads/brewis-mac.zip" role="button" download>
-                                <i class="bi bi-apple" alt="Mac"></i> Download game
-                            </a>
-                        </div>
-                </div>
-            </div> */}

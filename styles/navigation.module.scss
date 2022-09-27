@@ -4,6 +4,7 @@
     padding: 2em 1em;
     text-align: center;
     font-size: 125%;
+    font-weight: bolder;
     @include max-width;
 
     > svg {
@@ -24,6 +25,7 @@
         font-weight: bold;
         text-transform: lowercase;
         vertical-align: middle;
+        display: inline-block;
     }
 
     @include media(md) {

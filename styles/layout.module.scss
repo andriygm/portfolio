@@ -14,10 +14,21 @@
 }
 
 .hero {
-    font-size: 130%;
-    text-align: center;
+    display: flex;
     padding: 0 8%;
     margin-bottom: 4em;
+
+    text-align: center;
+    font-size: 130%;
+
+    > * {
+        flex: 1;
+    }
+
+    > img {
+        height: 100%;
+        border-radius: 2em;
+    }
 
     h1 {
         font-size: 220%;

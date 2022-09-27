@@ -1,9 +1,9 @@
 import Head from "next/head"
 
 import styles from "../styles/work.module.scss"
-import { MeahCounseling, ML, VR } from "../components/work"
+import { ML, VR, LOZ, BrewingGame, MeahCounseling } from "../components/work"
 
-function Work() {
+export default function Work() {
     return <>
         <Head>
             <title>Work — Andriy Massimilla</title>
@@ -17,8 +17,17 @@ function Work() {
             <h1>Research</h1>
 
             <div className={styles.projects}>
-                <ML />
                 <VR />
+                <ML />
+            </div>
+        </section>
+
+        <section>
+            <h1>Games</h1>
+
+            <div className={styles.projects}>
+                <LOZ />
+                <BrewingGame />
             </div>
         </section>
 
@@ -32,4 +41,9 @@ function Work() {
     </>
 }
 
-export default Work
+export function RecentWork() {
+    return <div className={styles.projects}>
+        <MeahCounseling />
+        <BrewingGame />
+    </div>
+}

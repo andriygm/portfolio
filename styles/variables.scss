@@ -3,6 +3,7 @@ $primary-color: rgb(221, 67, 67);
 $secondary-color: rgb(132, 42, 42);
 $tertiary-color: rgb(67, 20, 20);
 $background-color: rgb(255, 255, 255);
+$gray-color: rgb(81, 81, 81);
 
 $media: (
     sm: 640px,
@@ -29,7 +30,33 @@ $media: (
 }
 
 @mixin generic-transition {
-    transition-property: color transform;
+    transition-property: color, background-color, transform, filter;
     transition-duration: 0.2s;
     transition-timing-function: ease;
+}
+
+@mixin hover-sizing {
+    &:hover {
+        transform: scale(1.025);
+    }
+
+    &:active {
+        transform: scale(.95);
+    }
+}
+
+// Animations
+@keyframes wave {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(10deg);
+  }
+  75% {
+    transform: rotate(-10deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }

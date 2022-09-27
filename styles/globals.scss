@@ -2,39 +2,34 @@
 
 html,
 body {
-  padding: 0;
-  margin: 0;
-  font-family: Source Sans Pro, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  font-size: 20px;
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
 }
 
 a {
-  color: $secondary-color;
-  text-decoration: none;
-  @include generic-transition;
-  filter: drop-shadow(0 0 0.02rem $primary-color);
-
-  &:hover {
     color: $primary-color;
-  }
+    text-decoration: none;
+
+    @include generic-transition;
+
+    &:hover {
+        color: darken($primary-color, 20%);
+        // transform: rotate(-5deg);
+    }
 }
 
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 // @media (prefers-color-scheme: dark) {
-//   html {
-//     color-scheme: dark;
-//   }
-//   body {
-//     color: white;
-//     background: black;
-//   }
+//     html {
+//         color-scheme: dark;
+//     }
+//     body {
+//         color: white;
+//         background: #111;
+//     }
 // }
-
-@font-face {
-  font-family: 'Source Sans Pro';
-  src: url('/fonts/SourceSansPro-Regular.ttf') format('truetype');
-}

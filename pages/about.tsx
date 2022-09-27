@@ -7,7 +7,7 @@ function About() {
         </Head>
 
         <h1>About</h1>
-        <p>Im a software engineer who loves making scalable, readable, and performant applications and user experiences.</p>
+        <p>I'm a Computer Science graduate from the University of Michigan. I've taken classes in game design, computer vision, software engineering, philosophy, and others. In my free time I write code, implement fun & interesting ideas, bike, ski, play games with friends, and cook good food.</p>
     </>
 }
 
