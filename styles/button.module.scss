@@ -1,7 +1,7 @@
 @import "variables";
 
 .button {
-    display: inline-block;
+    display: block;
     margin-right: 0.5em;
     margin-bottom: 0.5em;
     padding: 1em 1.5em;
@@ -35,6 +35,10 @@
 
     > * {
         vertical-align: middle;
+        display: inline-block;
+    }
+
+    @include media(sm) {
         display: inline-block;
     }
 }
