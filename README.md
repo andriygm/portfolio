@@ -2,6 +2,8 @@
 
 My professional portfolio showcasing projects I have worked on. I started my portfolio using plain HTML and CSS, but I have since moved to using React and Next.js. This better follows DRY principles and allows me to use React components to create a more dynamic portfolio.
 
+This is a CI repository, meaning that changes to the main branch are automatically tested and deployed.
+
 ## Getting Started
 
 Installing the packages:
