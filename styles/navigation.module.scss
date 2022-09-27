@@ -4,7 +4,7 @@
     display: flex;
     text-align: center;
     flex-direction: column;
-    padding: 2em 1em;
+    padding: 2em 0;
     @include max-width;
 
     font-size: 125%;

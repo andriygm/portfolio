@@ -20,12 +20,12 @@
 
     background-color: #fafafa;
     border: 3px solid #eee;
-    border-radius: 2em;
+    border-radius: $rounded-corner-rad;;
 
     img {
         width: 100%;
-        border-top-left-radius: 2em;
-        border-top-right-radius: 2em;
+        border-top-left-radius: $rounded-corner-rad;
+        border-top-right-radius: $rounded-corner-rad;
     }
 
     .content {
