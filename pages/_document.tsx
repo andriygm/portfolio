@@ -5,7 +5,7 @@ export default function Document() {
         <Html>
             <Head>
                 <link
-                    href="https://fonts.googleapis.com/css2?family=Poppins"
+                    href="https://fonts.googleapis.com/css2?family=Poppins&display=optional"
                     rel="stylesheet"
                 />
             </Head>
@@ -14,5 +14,5 @@ export default function Document() {
                 <NextScript />
             </body>
         </Html>
-    )
+    );
 }

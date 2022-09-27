@@ -3,28 +3,32 @@ import Link from 'next/link'
 import styles from '../styles/navigation.module.scss'
 
 function Navigation() {
-    return <>
-        <nav className={styles.navigation}>
-            {/* <svg viewBox="0 0 1440 116" preserveAspectRatio="none"><path d="M0,80.4l40-21.1C80,37.7,160-3.9,240,1s160,58.5,240,74.1c80,16.2,160-5.6,240-10.7c80-4.9,160,4.9,240,21.1c80,15.6,160,37.4,240,26.5s160-52.6,200-74.1l40-21.1V0H0V80.4z"></path></svg> */}
+    return (
+        <>
+            <nav className={styles.navigation}>
+                {/* <svg viewBox="0 0 1440 116" preserveAspectRatio="none"><path d="M0,80.4l40-21.1C80,37.7,160-3.9,240,1s160,58.5,240,74.1c80,16.2,160-5.6,240-10.7c80-4.9,160,4.9,240,21.1c80,15.6,160,37.4,240,26.5s160-52.6,200-74.1l40-21.1V0H0V80.4z"></path></svg> */}
 
-            <Link href="/">
-                <a className={styles.logo}>🚀</a>
-            </Link>
+                <Link href="/" className={styles.logo}>
+                    <a className={styles.emoji}>🚀</a>
+                </Link>
 
-            <Link href="/">
-                <a>Home</a>
-            </Link>
-            <Link href="/work">
-                <a>Work</a>
-            </Link>
-            <Link href="/about">
-                <a>About</a>
-            </Link>
-            <Link href="/contact">
-                <a>Contact</a>
-            </Link>
-        </nav>
-    </>
+                <div className={styles.links}>
+                    <Link href="/">
+                        <a>Home</a>
+                    </Link>
+                    <Link href="/work">
+                        <a>Work</a>
+                    </Link>
+                    <Link href="/about">
+                        <a>About</a>
+                    </Link>
+                    <Link href="/contact">
+                        <a>Contact</a>
+                    </Link>
+                </div>
+            </nav>
+        </>
+    );
 }
 
 export default Navigation

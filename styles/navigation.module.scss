@@ -1,11 +1,14 @@
 @import "variables";
 
 .navigation {
-    padding: 2em 1em;
+    display: flex;
     text-align: center;
+    flex-direction: column;
+    padding: 2em 1em;
+    @include max-width;
+
     font-size: 125%;
     font-weight: bolder;
-    @include max-width;
 
     > svg {
         position: absolute;
@@ -14,27 +17,36 @@
         left: 0;
     }
 
-    .logo {
-        display: block;
-        padding: 0.5em;
-        font-size: 250%;
+    .emoji, .links {
+        flex: content;
     }
 
-    a {
-        padding: 1em;
-        font-weight: bold;
-        text-transform: lowercase;
-        vertical-align: middle;
-        display: inline-block;
+    .emoji {
+        font-size: 250%;
+    }
+    
+    .links {        
+        a {
+            display: inline-block;
+            padding: 1em;
+            text-transform: lowercase;
+        }
     }
 
     @include media(md) {
-        .logo {
-            display: inline-block;
+        flex-direction: row;
+        padding: 2em 2em;
+
+        .emoji {
+            text-align: left;
+        }
+        
+        .links {
+            text-align: right;
         }
     }
 
     @include media(lg) {
-        text-align: left;
+        justify-content: space-between;
     }
 }

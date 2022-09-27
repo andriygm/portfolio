@@ -15,11 +15,12 @@
 
 .hero {
     display: flex;
-    padding: 0 8%;
+    gap: 1em;
+    flex-direction: column;
     margin-bottom: 4em;
 
-    text-align: center;
     font-size: 130%;
+    text-align: center;
 
     > * {
         flex: 1;
@@ -35,17 +36,14 @@
     }
 
     @include media(md) {
-        padding: 0 10%;
         padding-top: 2em;
+        flex-direction: row;
+
         text-align: left;
 
         h1 {
             display: inline-block;
             padding-right: 18px;
         }
-    }
-
-    @include media(lg) {
-        padding: 0 15%;
     }
 }
