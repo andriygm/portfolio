@@ -9,6 +9,7 @@ import teleopThumbnail from "../images/thumbnails/teleop.png";
 import lozThumbnail from "../images/thumbnails/loz/dungeon-crop.png";
 import brewisThumbnail from "../images/thumbnails/brewis/title-screen.png";
 import meahThumbnail from "../images/thumbnails/meah.png";
+import portfolioThumbnail from "../images/thumbnails/portfolio.png";
 
 export function ML() {
     return (
@@ -210,6 +211,44 @@ export function MeahCounseling() {
 
                     <Button href="https://meahcounseling.com/">
                         <FaPlay className={styles.icon} /> Visit site
+                    </Button>
+                </div>
+            </div>
+        </>
+    );
+}
+
+export function Portfolio() {
+    return (
+        <>
+            <div className={styles.card}>
+                <Image
+                    src={portfolioThumbnail}
+                    alt="My portfolio website"
+                    layout="responsive"
+                />
+                <div className={styles.content}>
+                    <h1>My Portfolio</h1>
+
+                    <p>
+                        My professional portfolio showcasing projects I have
+                        worked on. I started my portfolio using plain HTML and
+                        CSS, but I have since moved to using React and Next.js.
+                        This better follows DRY principles and allows me to use
+                        React components to create a more dynamic portfolio.
+                    </p>
+
+                    <p>
+                        This project is continuously integrated, meaning that
+                        changes to the main branch are automatically validated
+                        and deployed.
+                    </p>
+
+                    <Button
+                        href="https://github.com/andriygm/portfolio"
+                        type="secondary"
+                    >
+                        <FaCode className={styles.icon} /> View source
                     </Button>
                 </div>
             </div>

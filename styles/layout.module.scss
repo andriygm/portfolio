@@ -54,3 +54,13 @@
         }
     }
 }
+
+.photo {
+    img {
+        border-radius: $rounded-corner-rad;
+    }
+    
+    @include media(md) {
+        margin: 3em 5em;
+    }
+}

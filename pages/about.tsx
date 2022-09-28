@@ -1,4 +1,8 @@
 import Head from "next/head"
+import Image from "next/image";
+
+import styles from "../styles/layout.module.scss";
+import pripyat from "../images/pictures/pripyat.jpg";
 
 function About() {
     return (
@@ -11,15 +15,28 @@ function About() {
             <p>
                 I{"'"}m a Computer Science graduate from the University of
                 Michigan. I{"'"}ve taken classes in game design, computer
-                vision, software engineering, philosophy, and others. In my free
-                time I write code, implement fun {"&"} interesting ideas, bike,
-                ski, play games with friends, and cook good food.
+                vision, software engineering, philosophy, and others. I{"'"}m
+                very fascinated by the intersection of technology and society,
+                and I{"'"}m always looking for ways to make the world a better
+                place.
             </p>
 
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
+            <div className={styles.photo}>
+                <Image
+                    src={pripyat}
+                    alt="Abandoned bumper car"
+                    layout="responsive"
+                    placeholder="blur"
+                />
+            </div>
+
+            <p>
+                In my free time I write code, bike, play games with friends,
+                ski, and cook good food. I{"'"}m also a big fan of the outdoors
+                and love to hike, camp, and explore new places. Above is a
+                picture I took of an abandoned bumper car in Pripyat, Ukraine, a
+                city that was abandoned after the Chernobyl disaster.
+            </p>
         </>
     );
 }
