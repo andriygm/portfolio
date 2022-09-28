@@ -9,7 +9,7 @@
         flex: 1;
     }
 
-    @include media(sm) {
+    @include media(md) {
         flex-direction: row;
     }
 }

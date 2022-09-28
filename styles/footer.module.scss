@@ -12,6 +12,7 @@
         align-items: center;
         text-align: center;
         @include max-width;
+        max-width: map-get($media, xl);
 
         @include media(md) {
             text-align: left;

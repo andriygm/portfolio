@@ -1,4 +1,4 @@
-import Head from 'next/head'
+import Head from "next/head";
 
 import { Button } from "../components/button";
 
@@ -42,4 +42,4 @@ function Contact() {
     );
 }
 
-export default Contact
+export default Contact;

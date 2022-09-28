@@ -4,25 +4,21 @@
     display: flex;
     text-align: center;
     flex-direction: column;
-    padding: 2em 0;
+    column-gap: 2em;
+    padding: 1.5em 0;
     @include max-width;
+    max-width: map-get($media, xl);
 
     font-size: 125%;
-    font-weight: bolder;
-
-    > svg {
-        position: absolute;
-        fill: #f4f2ff;
-        top: 0;
-        left: 0;
-    }
-
-    .emoji, .links {
-        flex: content;
-    }
+    font-weight: 600;
 
     .emoji {
         font-size: 250%;
+        display: inline-block;
+
+        &:hover {
+            transform: rotate(-5deg);
+        }
     }
     
     .links {        
@@ -30,20 +26,17 @@
             display: inline-block;
             padding: 1em;
             text-transform: lowercase;
+
+            &:hover {
+                transform: rotate(-5deg);
+            }
         }
     }
 
     @include media(md) {
+        justify-content: center;
         flex-direction: row;
         padding: 2em 2em;
-
-        .emoji {
-            text-align: left;
-        }
-        
-        .links {
-            text-align: right;
-        }
     }
 
     @include media(lg) {

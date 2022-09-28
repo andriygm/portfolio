@@ -1,15 +1,23 @@
 import { FaBookOpen, FaPlay, FaCode, FaWindows, FaApple } from 'react-icons/fa';
+import Image from "next/image";
 
-import styles from '../styles/work.module.scss'
-import { Button } from '../components/button'
+import styles from "../styles/work.module.scss";
+import { Button } from "../components/button";
+
+import inpaintingThumbnail from "../images/thumbnails/inpainting.png";
+import teleopThumbnail from "../images/thumbnails/teleop.png";
+import lozThumbnail from "../images/thumbnails/loz/dungeon-crop.png";
+import brewisThumbnail from "../images/thumbnails/brewis/title-screen.png";
+import meahThumbnail from "../images/thumbnails/meah.png";
 
 export function ML() {
     return (
         <>
             <div className={styles.card}>
-                <img
-                    src="../images/inpainting/thumb.png"
+                <Image
+                    src={inpaintingThumbnail}
                     alt="Inpainting results"
+                    layout="responsive"
                 />
                 <div className={styles.content}>
                     <h1>Image Inpainting using GANs</h1>
@@ -39,7 +47,11 @@ export function VR() {
     return (
         <>
             <div className={styles.card}>
-                <img src="../images/vr-teleop/flow-diagram.png" alt="VR" />
+                <Image
+                    src={teleopThumbnail}
+                    alt="Flow diagram of the teleop system"
+                    layout="responsive"
+                />
                 <div className={styles.content}>
                     <h1>VR Teleop Controller</h1>
 
@@ -94,9 +106,10 @@ export function LOZ() {
     return (
         <>
             <div className={styles.card}>
-                <img
-                    src="../images/loz-remake/banner.jpg"
+                <Image
+                    src={lozThumbnail}
                     alt="Legend of Zelda gameplay"
+                    layout="responsive"
                 />
                 <div className={styles.content}>
                     <h1>Legend of Zelda Remake</h1>
@@ -134,49 +147,72 @@ export function LOZ() {
 }
 
 export function BrewingGame() {
-    return <>
-        <div className={styles.card}>
-            <img src="../images/brewis/title-screen.png" />
-            <div className={styles.content}>
-                <h1>Brewis</h1>
+    return (
+        <>
+            <div className={styles.card}>
+                <Image
+                    src={brewisThumbnail}
+                    alt="Title screen of brewing game"
+                    layout="responsive"
+                />
+                <div className={styles.content}>
+                    <h1>Brewis</h1>
 
-                <p><em>Brew and sell ales, upgrade your equipment, and sell more ales!</em></p>
+                    <p>
+                        <em>
+                            Brew and sell ales, upgrade your equipment, and sell
+                            more ales!
+                        </em>
+                    </p>
 
-                <p>Developed a 3D top-down brewing-themed game in Unity and Blender with JIRA over the course of two weeks.</p>
-                <p>Developed during EECS 494.</p>
+                    <p>
+                        Developed a 3D top-down brewing-themed game in Unity and
+                        Blender with JIRA over the course of two weeks.
+                    </p>
+                    <p>Developed during EECS 494.</p>
 
-                <Button
-                    href="/content/webgl/brewis/">
-                    <FaPlay className={styles.icon} /> Play game
-                </Button>
-                <Button
-                    href="/content/downloads/brewis-win.zip">
-                    <FaWindows className={styles.icon} /> Download for Windows
-                </Button>
-                <Button
-                    href="/content/downloads/brewis-mac.zip">
-                    <FaApple className={styles.icon} /> Download for Mac
-                </Button>
+                    <Button href="/content/webgl/brewis/">
+                        <FaPlay className={styles.icon} /> Play game
+                    </Button>
+                    <Button href="/content/downloads/brewis-win.zip">
+                        <FaWindows className={styles.icon} /> Download for
+                        Windows
+                    </Button>
+                    <Button href="/content/downloads/brewis-mac.zip">
+                        <FaApple className={styles.icon} /> Download for Mac
+                    </Button>
+                </div>
             </div>
-        </div>
-    </>
+        </>
+    );
 }
 
 export function MeahCounseling() {
-    return <>
-        <div className={styles.card}>
-            <img src="../images/meahcounseling/preview.png" />
-            <div className={styles.content}>
-                <h1>Meah Counseling</h1>
+    return (
+        <>
+            <div className={styles.card}>
+                <Image
+                    src={meahThumbnail}
+                    alt="Meah Counseling website"
+                    layout="responsive"
+                />
+                <div className={styles.content}>
+                    <h1>Meah Counseling</h1>
 
-                <p>Website for local licensed therapist using WordPress with custom theme, enabling easy maintenance.</p>
-                <p>Tested accessibility of colors and page navigation and assessed usability across device sizes.</p>
+                    <p>
+                        Website for local licensed therapist using WordPress
+                        with custom theme, enabling easy maintenance.
+                    </p>
+                    <p>
+                        Tested accessibility of colors and page navigation and
+                        assessed usability across device sizes.
+                    </p>
 
-                <Button
-                    href="https://meahcounseling.com/">
-                    <FaPlay className={styles.icon} /> Visit site
-                </Button>
+                    <Button href="https://meahcounseling.com/">
+                        <FaPlay className={styles.icon} /> Visit site
+                    </Button>
+                </div>
             </div>
-        </div>
-    </>
+        </>
+    );
 }

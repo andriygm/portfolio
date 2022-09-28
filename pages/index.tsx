@@ -1,14 +1,16 @@
 import Link from "next/link";
+import Image from "next/image";
 
 import styles from "../styles/layout.module.scss";
-import { MeahCounseling } from "../components/work";
 import { RecentWork } from "./work";
+
+import profilePic from "../images/pictures/andriy_iceland.jpg";
 
 function Home() {
     return (
         <>
             <div className={styles.hero}>
-                <div>
+                <div className={styles.text}>
                     <h1>👋 {"Hi! I'm Andriy."}</h1>
                     <p>
                         I{"'"}m a software engineer who loves making scalable,
@@ -17,7 +19,12 @@ function Home() {
                     </p>
                 </div>
 
-                <img src="/images/profile.jpg"></img>
+                <div className={styles.image}>
+                    <Image
+                        src={profilePic}
+                        alt="A portrait of Andriy Massimilla"
+                    />
+                </div>
             </div>
 
             <h1>Recent Work</h1>

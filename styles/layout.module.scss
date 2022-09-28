@@ -15,21 +15,25 @@
 
 .hero {
     display: flex;
-    gap: 1em;
     flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1em;
     margin-bottom: 4em;
-
     font-size: 130%;
-    text-align: center;
 
-    > * {
+    .text {
         flex: 2;
+        text-align: center;
     }
 
-    > img {
+    .image {
         flex: 1;
-        height: 100%;
-        border-radius: $rounded-corner-rad;
+        text-align: right;
+
+        img {
+            border-radius: $rounded-corner-rad;
+        }
     }
 
     h1 {
@@ -40,7 +44,9 @@
         padding-top: 2em;
         flex-direction: row;
 
-        text-align: left;
+        .text {
+            text-align: left;
+        }
 
         h1 {
             display: inline-block;
