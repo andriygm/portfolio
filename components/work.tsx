@@ -1,5 +1,5 @@
 import { FaBookOpen, FaPlay, FaCode, FaWindows, FaApple } from 'react-icons/fa';
-import Image from "next/image";
+import Image from "next/future/image";
 
 import styles from "../styles/work.module.scss";
 import { Button } from "../components/button";
@@ -15,11 +15,8 @@ export function ML() {
     return (
         <>
             <div className={styles.card}>
-                <Image
-                    src={inpaintingThumbnail}
-                    alt="Inpainting results"
-                    layout="responsive"
-                />
+                <Image src={inpaintingThumbnail} alt="" placeholder="blur" />
+
                 <div className={styles.content}>
                     <h1>Image Inpainting using GANs</h1>
 
@@ -48,11 +45,8 @@ export function VR() {
     return (
         <>
             <div className={styles.card}>
-                <Image
-                    src={teleopThumbnail}
-                    alt="Flow diagram of the teleop system"
-                    layout="responsive"
-                />
+                <Image src={teleopThumbnail} alt="" placeholder="blur" />
+
                 <div className={styles.content}>
                     <h1>VR Teleop Controller</h1>
 
@@ -107,11 +101,8 @@ export function LOZ() {
     return (
         <>
             <div className={styles.card}>
-                <Image
-                    src={lozThumbnail}
-                    alt="Legend of Zelda gameplay"
-                    layout="responsive"
-                />
+                <Image src={lozThumbnail} alt="" placeholder="blur" />
+
                 <div className={styles.content}>
                     <h1>Legend of Zelda Remake</h1>
 
@@ -151,11 +142,8 @@ export function BrewingGame() {
     return (
         <>
             <div className={styles.card}>
-                <Image
-                    src={brewisThumbnail}
-                    alt="Title screen of brewing game"
-                    layout="responsive"
-                />
+                <Image src={brewisThumbnail} alt="" placeholder="blur" />
+
                 <div className={styles.content}>
                     <h1>Brewis</h1>
 
@@ -192,11 +180,8 @@ export function MeahCounseling() {
     return (
         <>
             <div className={styles.card}>
-                <Image
-                    src={meahThumbnail}
-                    alt="Meah Counseling website"
-                    layout="responsive"
-                />
+                <Image src={meahThumbnail} alt="" placeholder="blur" />
+
                 <div className={styles.content}>
                     <h1>Meah Counseling</h1>
 
@@ -222,11 +207,8 @@ export function Portfolio() {
     return (
         <>
             <div className={styles.card}>
-                <Image
-                    src={portfolioThumbnail}
-                    alt="My portfolio website"
-                    layout="responsive"
-                />
+                <Image src={portfolioThumbnail} alt="" placeholder="blur" />
+
                 <div className={styles.content}>
                     <h1>My Portfolio</h1>
 

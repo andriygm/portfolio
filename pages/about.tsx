@@ -1,5 +1,5 @@
 import Head from "next/head"
-import Image from "next/image";
+import Image from "next/future/image";
 
 import styles from "../styles/layout.module.scss";
 import pripyat from "../images/pictures/pripyat.jpg";
@@ -21,14 +21,12 @@ function About() {
                 place.
             </p>
 
-            <div className={styles.photo}>
-                <Image
-                    src={pripyat}
-                    alt="Abandoned bumper car"
-                    layout="responsive"
-                    placeholder="blur"
-                />
-            </div>
+            <Image
+                src={pripyat}
+                alt="Abandoned bumper car"
+                placeholder="blur"
+                className={styles.photo}
+            />
 
             <p>
                 In my free time I write code, bike, play games with friends,

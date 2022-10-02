@@ -30,10 +30,7 @@
     .image {
         flex: 1;
         text-align: right;
-
-        img {
-            border-radius: $rounded-corner-rad;
-        }
+        border-radius: $rounded-corner-rad;
     }
 
     h1 {
@@ -56,11 +53,17 @@
 }
 
 .photo {
-    img {
-        border-radius: $rounded-corner-rad;
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 2em auto;
+    border-radius: $rounded-corner-rad;
+
+    @include media(md) {
+        width: 80%;
     }
     
-    @include media(md) {
-        margin: 3em 5em;
+    @include media(lg) {
+        width: 60%;
     }
 }

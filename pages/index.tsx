@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Image from "next/image";
+import Image from "next/future/image";
 
 import styles from "../styles/layout.module.scss";
 import { RecentWork } from "./work";
@@ -19,12 +19,12 @@ function Home() {
                     </p>
                 </div>
 
-                <div className={styles.image}>
-                    <Image
-                        src={profilePic}
-                        alt="A portrait of Andriy Massimilla"
-                    />
-                </div>
+                <Image
+                    src={profilePic}
+                    alt="A portrait of the author in a mossy field"
+                    placeholder="blur"
+                    className={styles.image}
+                />
             </div>
 
             <h1>Recent Work</h1>
